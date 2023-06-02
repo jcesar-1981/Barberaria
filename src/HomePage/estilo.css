@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logotipo img{
+    height: 100px;
+    width: auto;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 25px;
+    border:  2px solid #B2987D;
+    padding: 10px 20px;
+    cursor: pointer;  
+    font-weight: 600;      
+}
+
+button img{
+    margin-right: 5px;
+}
+
+.icone{
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+
+.banner{
+    height: 341px;
+    display: flex;
+    background-image: url('/public/assets/banner-barbearia.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo{
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.conteudo h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.conteudo p:nth-of-type(1){
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.conteudo p:nth-of-type(2){
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+.conteudo p:last-of-type{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: #B2987D;
+}
+
+.modo-dark{
+    background-color:#252323;
+    color:#fff ;
+    font-size: 15px;
+}
+
+.modo-light{
+    background-color:#fff ;
+    color:#000;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 768px) {
+    .banner{
+        height: 341px;
+        display: flex;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:500px;   
+    }
+
+    .conteudo h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo p:nth-of-type(1){
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    .conteudo p:nth-of-type(2){
+        line-height: 26px;
+        margin-bottom: 60px;
+    }
+    
+    .conteudo p:last-of-type{
+        font-family: 'Great Vibes', cursive;
+        font-weight: 500;
+        font-size: 25px;
+        color: #B2987D;
+    }
+}
